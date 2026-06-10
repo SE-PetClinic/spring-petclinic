@@ -148,7 +148,7 @@ public class Owner extends Person {
 	 * @param ignoreNew whether to ignore new pets (pets that are not saved yet)
 	 * @return the Pet with the given name, or null if no such Pet exists for this Owner
 	 */
-	#Re-commited this blocks
+	// Re-commited blocks
 	public Pet getPet(String name, boolean ignoreNew) {
 		return getPets().stream()
 			.filter(pet -> pet.getName() != null && pet.getName().equalsIgnoreCase(name))
