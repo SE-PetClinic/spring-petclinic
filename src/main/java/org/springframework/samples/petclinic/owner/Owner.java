@@ -150,11 +150,11 @@ public class Owner extends Person {
 	 */
 	// Re-commited blocks
 	public Pet getPet(String name, boolean ignoreNew) {
-		return getPets().stream()
-			.filter(pet -> pet.getName() != null && pet.getName().equalsIgnoreCase(name))
-			.filter(pet -> !ignoreNew || !pet.isNew())
-			.findFirst()
-			.orElse(null);
+		return getPets().stream() // Re-commited blocks
+			.filter(pet -> pet.getName() != null && pet.getName().equalsIgnoreCase(name)) // Re-commited blocks
+			.filter(pet -> !ignoreNew || !pet.isNew()) // Re-commited blocks
+			.findFirst() // Re-commited blocks
+			.orElse(null);  // Re-commited blocks
 	}
 
 	@Override
