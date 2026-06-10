@@ -149,11 +149,11 @@ public class Owner extends Person {
 	 * @return the Pet with the given name, or null if no such Pet exists for this Owner
 	 */
 	public Pet getPet(String name, boolean ignoreNew) {
-		return getPets().stream()
-			.filter(pet -> pet.getName() != null && pet.getName().equalsIgnoreCase(name))
-			.filter(pet -> !ignoreNew || !pet.isNew())
-			.findFirst()
-			.orElse(null);
+		return getPets().stream()//
+			.filter(pet -> pet.getName() != null && pet.getName().equalsIgnoreCase(name)) //
+			.filter(pet -> !ignoreNew || !pet.isNew())//
+			.findFirst()//
+			.orElse(null);//
 	}
 
 	@Override
