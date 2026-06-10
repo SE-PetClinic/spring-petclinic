@@ -247,6 +247,7 @@ class OwnerControllerTests {
 			.andExpect(redirectedUrl("/owners/" + pathOwnerId + "/edit"))
 			.andExpect(flash().attributeExists("error"));
 	}
+
 	@Test
 	void processCreationFormWithFormattedTelephoneSuccess() throws Exception {
 		mockMvc

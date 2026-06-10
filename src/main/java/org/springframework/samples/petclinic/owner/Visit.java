@@ -71,9 +71,8 @@ public class Visit extends BaseEntity {
 	}
 
 	/**
-	 * Returns true if the description is considered valid:
-	 * not null, not empty, and not whitespace-only.
-	 * Used to verify description quality before saving.
+	 * Returns true if the description is considered valid: not null, not empty, and not
+	 * whitespace-only. Used to verify description quality before saving.
 	 * @return true if description is non-blank after trimming
 	 */
 	public boolean hasValidDescription() {

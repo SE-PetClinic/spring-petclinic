@@ -81,6 +81,7 @@ public class Pet extends NamedEntity {
 	public void addVisit(Visit visit) {
 		getVisits().add(visit);
 	}
+
 	@Column(name = "microchip_id")
 	private String microchipId;
 

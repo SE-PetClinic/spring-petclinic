@@ -83,17 +83,16 @@ public class Owner extends Person {
 	}
 
 	/**
-	 * Returns a display-friendly formatted version of the telephone number.
-	 * Adds dashes for readability (e.g. 6085551023 -> 608-555-1023).
+	 * Returns a display-friendly formatted version of the telephone number. Adds dashes
+	 * for readability (e.g. 6085551023 -> 608-555-1023).
 	 * @return formatted telephone string, or null if telephone is not set
 	 */
 	public String getFormattedTelephone() {
 		if (this.telephone == null || this.telephone.length() != 10) {
 			return this.telephone;
 		}
-		return this.telephone.substring(0, 3) + "-"
-			+ this.telephone.substring(3, 6) + "-"
-			+ this.telephone.substring(6);
+		return this.telephone.substring(0, 3) + "-" + this.telephone.substring(3, 6) + "-"
+				+ this.telephone.substring(6);
 	}
 
 	public void setTelephone(String telephone) {
